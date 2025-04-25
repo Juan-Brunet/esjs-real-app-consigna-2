@@ -1,22 +1,7 @@
-importar { Terminal } desde '@es-js/terminal'
-
-asincrono funcion inicio() {
-	Terminal.limpiar()
-
-	Terminal.escribir('Ingresa un valor:')
-
-	const resultado = esperar Terminal.leer()
-
-	Terminal.escribir({
-		Resultado: resultado,
-		Tipo: tipoDe resultado,
-	})
-
-	Terminal.escribir('Presiona ENTER para volver a iniciar')
-
-	esperar Terminal.leerEnter()
-
-	esperar inicio()
+funcion esDivisible(A, B) {
+  si(A % B ==0){
+ retornar verdadero
+} sino {
+  retornar falso
 }
-
-inicio()
+}
